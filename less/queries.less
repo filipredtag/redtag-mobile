@@ -1,0 +1,96 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+@media (min-width: 320px) and (max-width:479px) {
+    /* standard portrait	//iPhone3,4,5, Sony Experia, Nokia, HTC */
+
+	.logo{
+	min-height: 40px;
+	width: 40%;
+	}
+}
+
+@media (min-width:480px)  {
+/* landscape in iPhone 3,4,5 // portrait in Samsung Galaxy 3 and up //Sony Experia S, Motorola Drazor, HTC One */
+
+    .logo{
+	min-height: 45px;
+	width: 35%;
+	}
+    .nav-tabs > li > a{
+	font-size: 100%;
+	letter-spacing: 0.002em;
+	}
+}
+
+// =====	RETINA SCREENS	=========================================================================
+
+@media (max-width:479px) and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for portrait iPhone 4,5 */   
+
+
+}
+
+@media (min-width:480px) and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for landscape iPhone 4,5 */
+
+
+}
+
+@media (min-width:640px) and (-webkit-min-device-pixel-ratio: 1.5) {
+	/* landscape in samsung galaxy 3 and up */
+	.logo{
+		min-height: 40px;
+		width: 20%;
+		}
+	.nav-tabs > li > a{
+		font-size: 100%;
+		letter-spacing: 0.002em;
+		}
+}
+
+@media (min-height:568px)
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for portrait iPhone 5, Samsung Galaxy 3 and up, HTC Evo etc... */
+    #search{
+    	.modal{
+    	// height: 30%; the initial height without child selectors revealed
+    	height: 46%;
+    	}
+    }  	
+}
+
+@media (min-height:568px)
+        {
+    /* Style adjustments Samsung Galaxy 2 and up, HTC Evo etc... */
+    #search{
+    	.modal{
+    	// height: 25%; the initial height without child selectors revealed
+    	height: 40%;
+    	}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+                      
+
+  
+  

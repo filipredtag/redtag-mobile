@@ -1,0 +1,450 @@
+
+/* #Typography
+================================================== */
+h1,h2,h3,h4{
+    color:#676767;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+html,
+button,
+input,
+select,  
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+.clear{
+  clear: both;
+}
+
+.reset{
+    margin:0;
+    padding: 0
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+.content-body{
+  margin: 0 -20px 0 -20px;
+  position: relative;
+  .container{
+    width: 95%;
+    input[type="text"]{
+    width: 95%;
+    }
+  }
+}
+
+.star-rating{
+  color: #F8961D;
+}
+
+select{
+    width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin: -3px 5px 0 0;
+    box-sizing: border-box;
+}
+
+.box{
+  .box-sizing;
+  border: 1px solid #cdcdcd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+  padding:10px 10px 10px 10px;
+}
+
+.header{
+    color: #343333;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    height: auto;
+}
+
+.wrapper-box{
+  margin: 0px -8px 0px -8px;
+  background-color: #EFEEEE;
+  .container{
+    padding: 20px 0;
+  }
+  a:link, a:focus, a:visited; a:hover{
+    color: #343333;
+    text-decoration: none;
+  }
+  a:active{ color:black; }
+  ul{
+    margin:0;
+    li{
+        margin: 0 0 10px 0;
+        a{
+            .box;
+            .header;
+            .sprite;
+            display: block;
+            background-position: 97% -130px;
+        }
+        a:visited{
+            background-position: 0 0;
+        }
+    }
+  }
+  .collapsible{
+    a{
+        background-position: 97% -220px;
+        text-align: left;
+        div{
+            font-size: 12px;
+            line-height: 18px;
+            top: 10px;
+            background-color: white;
+        }
+        .in{
+            margin-bottom: 10px;
+        }
+    }
+    .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+        color: #333333;
+        background-color: white;
+    }
+  }
+} 
+
+// ***   styling for fixed header   ***
+
+.subheader{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 55px;
+    background: white;
+    z-index: 999;
+    padding: 0 10px;
+    .general-header, .flights-header, .vacations-header {
+        padding: 8px 0 8px 0;
+        display: inline-block;
+        float: left;
+        h1,h2,h3,h4{
+        line-height: 18px;
+        }
+    }
+    .price{
+        color: #343333;
+        font-size: 12px;
+        float: right;
+        margin:20px 0 0 0;
+        :first-child{
+            font-size: 21px;
+            font-weight: 700;
+        }
+        span{
+            display: block;
+            text-align: right;
+        }
+    }
+}
+
+
+.box-wrapper{
+    .box-sizing;
+    border: 1px solid #cdcdcd;
+    background: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    padding:10px 10px 15px 10px;
+    font-size: 12px;
+    h2,h3,h4{
+        display: inline-block;
+        line-height: 18px;
+        margin-bottom: 5px;
+    } 
+    hr{
+        margin: 15px 0 12px 0;
+        height: auto;
+        border-bottom: 1px dashed #cdcdcd;
+        clear: both;
+        box-shadow: none;
+    }
+    .price{
+        float: right;
+        display: inline-block;
+        color: #343333;
+        font-size: 21px;
+        line-height: 21px;
+        font-weight: 700;
+    }
+    .trip-axis{
+        display: table;
+        border-bottom: 1px solid #343333;
+        float: left;
+        width: 58%;
+        padding: 0;
+        margin: -3px 0px 0px 0px;
+        text-align: center;
+        .content{
+            display: table-row;
+            div{
+                display: table-cell;
+                span{
+                    color:#343333;
+                    background-color: white;
+                    border: 1px solid #343333;
+                    padding:7px 4px;
+                    font-size: 10px;
+                    -moz-border-radius: 50%; 
+                    -webkit-border-radius: 50%; 
+                    border-radius: 50%;
+                    position: relative;
+                    top: 9px;
+                }
+            }
+            .dep{
+                text-align: left;
+            }
+            .arr{
+                text-align: right;
+            }
+        }
+    }
+    .dep-time{
+        float: left;
+        margin: 2% 0 0 0;
+        width: 20%;
+        color: #343333;
+        font-size: 14px;
+    }
+    .arr-time{
+        float: right;
+        margin: 2% 0 0 0;
+        width: 20%;
+        text-align: right;
+        color: #343333;
+        font-size: 14px;
+    }
+    .dep-details{
+            float: left;
+            margin: 2% 0 0 0;
+            width: 26%;
+        span{
+            color: #676767;
+            display: inline-block;
+        }
+        :first-child{
+            font-size: 14px;
+            color: #343333;
+            text-transform: uppercase;
+        }
+    }
+    .arr-details{ 
+            float: right;
+            margin: 2% 0 0 0;
+            width: 26%;
+            text-align: right;
+        span{                           
+            color: #676767;
+            display: inline-block;
+        }
+        :first-child{
+            font-size: 14px;
+            color: #343333;
+            text-transform: uppercase;
+        }                   
+    }
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.sprite{
+    background: #fff url(/img/sprite.png) no-repeat;
+}
+
+.flex{
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ 
+    display: -ms-flexbox; /* TWEENER - IE 10 */ 
+    display: -webkit-flex; /* NEW - Chrome */ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.box-sizing{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}                    
+
+
+
+#search, .flights-search-results-wrapper{
+/* ==========================================================================
+    buttons and such...
+   ========================================================================== */
+
+  button{
+    -webkit-transition: all 0.2s ease-in-out !important;
+    -moz-transition: all 0.2s ease-in-out !important;
+    -o-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+    -webkit-backface-visibility: hidden !important;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: inset rgba(255, 255, 255, 0.25) 0 1px, rgba(0, 0, 0, 0.19) 0 2px 2px;
+    padding: 10px 0px;
+    margin: 10px 0 10px 0;
+    border:none;
+
+    background: -moz-linear-gradient(top, #68cc4d 0%, #5fba46 99%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #68cc4d), color-stop(99%, #5fba46));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #68cc4d 0%, #5fba46 99%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #68cc4d 0%, #5fba46 99%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #68cc4d 0%, #5fba46 99%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #68cc4d 0%, #5fba46 99%);
+  }
+
+  button:active {
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 2px 1px, rgba(0, 0, 0, 0.19) 0 2px 2px;
+  }
+
+  button:hover {
+    background: -moz-linear-gradient(top, #5fba46 0%, #68cc4d 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5fba46), color-stop(100%, #68cc4d));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #5fba46 0%, #68cc4d 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #5fba46 0%, #68cc4d 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #5fba46 0%, #68cc4d 100%);
+    /* IE10+ */
+  }
+}
+
+
+/* ==========================================================================
+    footer
+   ========================================================================== */
+
+footer{
+    margin-bottom: 20px;
+    ul{
+        margin: 0;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    a:link{
+        font-size: 100%;
+    }
+    a:link, a:visited, a:focus{
+        color: whitesmoke;
+    }
+    a:hover{
+        opacity: .5;
+    }
+}
