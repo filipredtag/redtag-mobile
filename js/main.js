@@ -14,19 +14,4 @@ $(document).ready(function () {
 });
 
 
-$("#numberOfChildren").change(function(){
-		$("#childAgeBlock").hide();
-		$("#childAges").html("");
-		var modalTemplate = $("#childModalTemplate").html();
-		var numChild = $(this).val();
-		for(var x=1;x<=numChild;x++){
-			var ageVar = x-1;
-			newModalTemplateTmp = modalTemplate.replace('Child 1','Child '+x);
-			newModalTemplate = newModalTemplateTmp.replace('name="childrenAge"','name="child['+ageVar+']"');
-			$("#childAges").append(newModalTemplate);
-		}
-		$("#childAgeBlock").show();
-	});
-
-
 
